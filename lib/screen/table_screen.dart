@@ -85,20 +85,25 @@ class TableScreen extends StatelessWidget {
                         style: TextStyle(fontSize: 16),
                       ))
                 ]),
-                TableRow(children: [
-                  TableCell(
-                      child: Text("Total",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ))),
-                  TableCell(
-                      verticalAlignment: TableCellVerticalAlignment.middle,
-                      child: Text(
-                        (decorator + photographer + caterer).toStringAsFixed(2),
-                        style: TextStyle(fontSize: 16),
-                      ))
-                ]),
+                TableRow(
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                    ),
+                    children: [
+                      TableCell(
+                          child: Text("Total",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                      TableCell(
+                          verticalAlignment: TableCellVerticalAlignment.middle,
+                          child: Text(
+                            (decorator + photographer + caterer)
+                                .toStringAsFixed(2),
+                            style: TextStyle(fontSize: 16),
+                          ))
+                    ]),
               ],
             ),
             SizedBox(
