@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:phera_assigment/widget/pie_chart_sections.dart';
 import './indicator.dart';
-import 'badge.dart';
 
 class Pie extends StatefulWidget {
   double decorator;

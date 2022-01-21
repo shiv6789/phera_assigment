@@ -15,9 +15,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: InputScreen(),
-      // routes: {
-      //   PieChartScreen.routeName: (ctx) => PieChartScreen(),
-      // },
     );
   }
 }
