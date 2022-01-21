@@ -76,7 +76,7 @@ class _PieState extends State<Pie> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const <Widget>[
                 Indicator(
-                  color: Color(0xff0293ee),
+                  color: Colors.blue,
                   text: 'Decorator',
                   isSquare: true,
                 ),
@@ -84,7 +84,7 @@ class _PieState extends State<Pie> {
                   width: 4,
                 ),
                 Indicator(
-                  color: Color(0xfff8b250),
+                  color: Colors.lightGreen,
                   text: 'Photographer',
                   isSquare: true,
                 ),
@@ -92,7 +92,7 @@ class _PieState extends State<Pie> {
                   width: 4,
                 ),
                 Indicator(
-                  color: Color(0xff845bef),
+                  color: Colors.orange,
                   text: 'Caterer',
                   isSquare: true,
                 ),
@@ -128,7 +128,7 @@ class _PieState extends State<Pie> {
       switch (i) {
         case 0:
           return PieChartSectionData(
-            color: const Color(0xff0293ee),
+            color: Colors.blue[700],
             value: ((decorator / (decorator + photographer + caterer)) * 100),
             title: ((decorator / (decorator + photographer + caterer)) * 100)
                     .toStringAsFixed(2) +
@@ -147,7 +147,7 @@ class _PieState extends State<Pie> {
           );
         case 1:
           return PieChartSectionData(
-            color: const Color(0xfff8b250),
+            color: Colors.orange,
             value: ((caterer / (decorator + photographer + caterer)) * 100),
             title: ((caterer / (decorator + photographer + caterer)) * 100)
                     .toStringAsFixed(2) +
@@ -160,7 +160,7 @@ class _PieState extends State<Pie> {
           );
         case 2:
           return PieChartSectionData(
-            color: const Color(0xff845bef),
+            color: Colors.lightGreen,
             value:
                 ((photographer / (decorator + photographer + caterer)) * 100),
             title: ((photographer / (decorator + photographer + caterer)) * 100)
